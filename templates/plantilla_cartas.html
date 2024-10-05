@@ -1,0 +1,17 @@
+<div class="content-section coleccion" style="height:100%; overflow-y: scroll;">
+  <span>
+    <span class="grande"><b>Mis Cartas</b></span>
+  </span>
+  <hr>
+  <div class="" style="align-items: center; ">
+    {% for carta in cartas %}
+      {% for id_carta in carta %}
+        <div class="">
+          <a class="no_deco" href="{{ url_for('editar_mazo', nombre_mazo=mazo, carta_editar=id_carta ,estado='True') }}"><img src="https://storage.googleapis.com/ygoprodeck.com/pics_small/{{ id_carta }}.jpg" style="width:30%;"></a>
+        </div>
+        <br>
+      {% endfor %}
+    {% endfor %}
+  </div>
+</div>
+{% block cartas %}{% endblock %}

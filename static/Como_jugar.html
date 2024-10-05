@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <div class="container">
+
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4 text-center" >¿Cómo Jugar?</h1>
+  
+      </div>
+    </div>
+
+    <p class="my-4">
+      <h5>   Cómo tener Duelo y Cómo ganar  </h5>
+      
+      En este juego, dos jugadores se enfrentan en Duelos utilizando una
+      variedad de Cartas de Monstruo, Mágicas y de Trampa para derrotar
+      a los monstruos de su adversario y ser el primero en reducir a 0 los
+      LP (Life Points - Puntos de Vida) del otro.     
+    </p>
+    <p class="my-4">
+      <h5> Ganar un Duelo  </h5>
+      Cada jugador comienza un Duelo con 8000 LP (Life Points - Puntos
+      de Vida). Ganas el Duelo si se cumple una de las siguientes
+      condiciones: reduces los LP de tu adversario a 0; tu oponente no
+      tiene más cartas para robar; o si el efecto especial de una carta dice
+      que has ganado. Si tú y tu adversario llegan a 0 LP al mismo tiempo,
+      el Duelo se declara un empate.   
+    </p>
+
+
+
+
+    <p class="my-4">
+     <h5>  Preparándote para el Duelo </h5>
+     <p>
+      Antes de comenzar un Duelo, sigue estos 4 pasos. También,
+      asegúrate de tener todos los elementos extra que tu Deck pueda
+      requerir, como monedas o contadores.
+     </p>
+
+ <!-- Faces -->
+
+    <div class="row">
+      <div class="col-4">
+        <div class="list-group" id="list-tab" role="tablist">
+          <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">1</a>
+          <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">2</a>
+          <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">3</a>
+          <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">4</a>
+        </div>
+      </div>
+
+      <div class="col-8">
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade border show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">Antes de comenzar un Duelo, sigue estos 4 pasos. También, asegúrate de tener todos los elementos extra que tu Deck pueda requerir, como monedas o contadores.</div>
+          <div class="tab-pane fade border" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">Después de cortar, pon los Decks boca abajo en las Zonas del Deck apropiadas, en el Campo. Si usas un Deck Extra con Cartas de Monstruo Xyz, de Sincronía o 2 de Fusión, ponla boca abajo en la Zona del Deck Extra</div>
+          <div class="tab-pane fade border" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">Ambos jugadores deben mostrarse mutuamente sus Side Decks, anotar el número de cartas que contiene, y confirmar que contienen 15 cartas o menos (las cartas deben contarse boca abajo). Si intercambias cartas entre tu Side Deck y tu Deck Principal después de un Duelo, cuenta las cartas de tu Side Deck para mostrarle a tu adversario que todavía tienes la misma cantidad de cartas allí.</div>
+          <div class="tab-pane fade border" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">Juega “Piedra, Papel o Tijera” o lanza una moneda. El ganador decide quién será primero o segundo en el Duelo. Para tus siguientes Duelos, el perdedor del Duelo anterior es el que decide quién va primero y quién segundo. Si el Duelo anterior terminó en empate, decidan quién será primero en el Duelo siguiente con otro lanzamiento, etc. Finalmente, roba 5 cartas de la parte superior de tu Deck; esta es tu mano inicial.</div>
+        </div>
+      </div>
+    </div>
+
+    <h5>  Estructura del Turno </h5>
+    <p>
+      Un Duelo progresa en una serie de “turnos” que están divididos en
+      “Phases” (fases)
+    </p>
+
+    <div class="row">
+      <div class="col-4">
+        <div class="list-group" id="list-tab" role="tablist">
+          <a class="list-group-item list-group-item-action active " id="list-home-list" data-toggle="list" href="#list-home1" role="tab" aria-controls="home1">Draw Phase</a>
+          <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile2" role="tab" aria-controls="profile2">Standby Phase</a>
+          <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages3" role="tab" aria-controls="messages3">Main Phase 1</a>
+          <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings4" role="tab" aria-controls="settings4">Battle Phase</a>
+          <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages5" role="tab" aria-controls="messages5">Main Phase 2</a>
+          <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings6" role="tab" aria-controls="settings6">End Phase</a>
+ 
+        </div>
+      </div>
+
+      <div class="col-8">
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade  border show active" id="list-home1" role="tabpanel" aria-labelledby="list-home-list">Esta es la primera Phase. El jugador cuyo turno está transcurriendo (el “jugador activo”) roba 1 carta de la parte superior de su Deck. Un jugador sin cartas en su Deck y que no puede robar pierde el Duelo. Después de robar, Cartas de Trampa o Cartas Mágicas de Juego Rápido pueden ser activadas antes de avanzar a la Standby Phase. <b> IMPORTANTE: El jugador que juega primera no puede robar durante la Draw Phase de su primer turno.</b></div>
+          <div class="tab-pane fade border" id="list-profile2" role="tabpanel" aria-labelledby="list-profile-list">Algunas cartas tienen efectos para activar, o costes que debes pagar en la Standby Phase. Si no tienes ninguna de estas cartas en el Campo, todavía puedes activar Cartas de Trampa o Cartas Mágicas de Juego Rápido antes de avanzar a tu Main Phase 1.</div>
+          <div class="tab-pane fade border" id="list-messages3" role="tabpanel" aria-labelledby="list-messages-list">Aquí es cuando juegas la mayoría de tus cartas: puedes Invocar o Colocar monstruos, cambiar la posición de batalla de un monstruo, activar el efecto de una carta y Colocar Cartas Mágicas y de Trampa. Estas acciones pueden ser llevadas a cabo en cualquier orden que quieras, pero algunas acciones tienen restricciones.</div>
+          <div class="tab-pane fade border" id="list-settings4" role="tabpanel" aria-labelledby="list-settings-list">¡Ahora es el momento de batallar con tus Cartas de Monstruos! Esta Phase se divide en pasos llamados “Steps”. No estás obligado a realizar una Battle Phase cada turno, aunque tienes un monstruo en el campo. <b> IMPORTANTE: El jugador que juega primero no puede realizar su Battle Phase en su primer turno.</b></div>
+          <div class="tab-pane fade border" id="list-messages5" role="tabpanel" aria-labelledby="list-messages-list">Si realizaste una Battle Phase, tu turno avanza luego a la Main Phase 2. Las acciones que un jugador puede realizar en esta Phase son las mismas que en la Main Phase 1. Sin embargo, si el jugador ya realizó una acción en la Main Phase 1 que tiene un límite en la cantidad de veces que puede ser ejecutada, el jugador no puede hacerla de nuevo en la Main Phase 2. Considera si quieres activar y Colocar Cartas Mágicas y de Trampa, o Invocar o Colocar un monstruo (si no lo hiciste en la Main Phase 1) basado en tu situación después de tu Battle Phase. Usa esta Phase para prepararte para el turno de tu adversario.</div>
+          <div class="tab-pane fade border" id="list-settings6" role="tabpanel" aria-labelledby="list-settings-list">Anuncia el final de tu turno, y si hay alguna carta en el Campo que diga “…durante la End Phase…” en su texto, resuelve esos efectos en esta phase. Si tienes más de 6 cartas en tu mano al final de esta phase, selecciona y descarta cartas al Cementerio hasta que sólo tengas 6 cartas en tu mano.</div>
+    
+        </div>
+      </div>
+    </div>
+
+  </p>
+  </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

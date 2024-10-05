@@ -1,0 +1,48 @@
+{% extends "plantilla.html" %}
+
+{% block content %}
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="{{ url_for('index') }}">Inici</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Tienda
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="{{ url_for('cartas') }}">Cartas</a>
+          <a class="dropdown-item" href="{{ url_for('sobres') }}">Sobres</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('como_jugar') }}">Como jugar</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Mi coleccion
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="{{ url_for('mis_cartas') }}">Mis Cartas</a>
+          <a class="dropdown-item" href="{{ url_for('mis_mazos') }}">Mis Mazos</a>
+          <a class="dropdown-item" href="{{ url_for('historial') }}">Mi Historial</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('cesta') }}">Mi Cesta</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('usuario') }}">Mi Perfil</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('logout') }}">Cerrar Sesion</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="content-section">
+  {{ posts }}
+</div>
+{% endblock content %}

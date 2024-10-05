@@ -1,0 +1,31 @@
+<div class="content-section mazo">
+  <span>
+    <span class="grande"><b>{{ mazo }}</b></span>
+  </span>
+  <hr>
+  <div class="blanco flex">
+    {% if longitud==0 %}
+      {% for i in range(60) %}
+        <div class="carta_mazo">
+          <img src="" style="width:40%;">
+        </div>
+      {% endfor %}
+    {% else %}
+      {% for cartas in mazo_actual %}
+        {% for id_carta in cartas %}
+          {% for cantidad in range(cartas[id_carta]) %}
+            <div class="carta_mazo">
+              <a class="no_deco" href="{{ url_for('editar_mazo', nombre_mazo=mazo, carta_editar=id_carta ,estado='False') }}"><img src="https://storage.googleapis.com/ygoprodeck.com/pics_small/{{ id_carta }}.jpg" style="width:80%;"></a>
+            </div>
+          {% endfor %}
+        {% endfor %}
+      {% endfor %}
+      {% for j in range(60-longitud) %}
+        <div class="carta_mazo">
+          <img src="" style="width:40%;">
+        </div>
+      {% endfor %}
+    {% endif %}
+  </div>
+</div>
+{% block cartas_mazo %}{% endblock %}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css.css') }}">
+    <title></title>
+    <style media="screen">
+    body {
+      background: #fafafa;
+      color: #333333;
+      margin-top: 0rem;
+      margin: 0px;
+      padding: 0px;
+      align-items: center;
+    }
+    .no_deco{
+      text-decoration: none;
+      color: white;
+    }
+    .no_deco:hover{
+      text-decoration: none;
+      color: white;
+    }
+    .container-fluid {
+        padding-right:0;
+        padding-left:0;
+        margin-right:auto;
+        margin-left:auto;
+        height: 98vh;
+     }
+     .flex{
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       flex-flow: row wrap;
+     }
+     .carta{
+       font-size: 100%;
+       text-align: center;
+       position: relative;
+       margin:30px;
+       width: 168px;
+       height: 300px;
+       text-align: center;
+     }
+     .carta img{
+       height: 246px;
+       width: 168px;
+     }
+     .sobre{
+       font-size: 100%;
+       text-align: center;
+       position: relative;
+       margin:30px;
+       width: 168px;
+       height: 300px;
+       text-align: center;
+     }
+     .sobre img{
+       height: 246px;
+       width: 168px;
+     }
+     table,th,td{
+       border: 1px solid black;
+       text-align: center;
+     }
+     .cesta{
+       width: 75%;
+     }
+     .derecha{
+       position: relative;
+       float: right;
+     }
+     .grande{
+       font-size:180%;
+     }
+     .mediano{
+       font-size: 130%;
+     }
+     .subtitulo{
+       margin-top:2.5%;
+     }
+     .precio_total{
+       color: white;
+     }
+     .mazo{
+       width: 60%;
+       float: left;
+       margin-left: 1.5%;
+     }
+     .coleccion{
+       width: 35%;
+       float: right;
+       margin-right: 1.5%;
+     }
+     .blanco{
+       border:solid 3px grey;
+     }
+     .carta_mazo{
+       font-size: 100%;
+       text-align: center;
+       position: relative;
+       width: 75px;
+       height: 90px;
+       text-align: center;
+       border: solid 1px white;
+       background-color: grey;
+     }
+     .pagination {
+      width: 40em;
+      align-items: center;
+      margin-left: 25%;
+      }
+      .pagination ul{
+     margin: 0 auto;
+     width:600px;
+     list-style: none;
+     text-align: center;
+      }
+      .pagination ul li{
+        display: inline;
+        margin: 2%;
+      }
+      .pagination ul li{
+        display: inline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      {% block content %}{% endblock %}
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='javaajuda.js') }}"></script>
+    <script src="{{ url_for('static', filename='java.js') }}"></script>
+  </body>
+</html>
